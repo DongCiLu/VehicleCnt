@@ -1,0 +1,163 @@
+
+
+% This is a small sample LaTeX input file (Version of 10 April 1994)
+%
+% Use this file as a model for making your own LaTeX input file.
+% Everything to the right of a  %  is a remark to you and is ignored by LaTeX.
+
+% The Local Guide tells how to run LaTeX.
+
+% WARNING!  Do not type any of the following 10 characters except as directed:
+%                &   $   #   %   _   {   }   ^   ~   \
+
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[conference]{IEEEtran}
+
+%% INFOCOM 2011 addition:
+\makeatletter
+\def\ps@headings{%
+	\def\@oddhead{\mbox{}\scriptsize\rightmark \hfil \thepage}%
+	\def\@evenhead{\scriptsize\thepage \hfil \leftmark\mbox{}}%
+	\def\@oddfoot{}%
+	\def\@evenfoot{}}
+\makeatother
+\pagestyle{headings}
+%\usepackage{latex8}
+\usepackage{setspace}
+\usepackage{times}
+ 
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\usepackage[latin1]{inputenc}
+\usetikzlibrary{arrows}
+\usepackage{epsfig,xspace}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{varwidth}
+\usepackage{graphicx}
+\usepackage{mathtools}
+%\usepackage{fix2col}
+\usepackage{multirow}
+
+\usepackage{algorithm}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+%\usepackage[dvips]{graphicx}
+%\usepackage{mss}
+%\usepackage{subfigure}
+\usepackage{subfigure}
+
+%\usepackage{nopageno}
+%\usepackage{fix2col}
+
+\IEEEoverridecommandlockouts
+\lstset{
+	basicstyle=\footnotesize,
+	columns=flexible,
+	morecomment=[s]{/*}{*/}}
+
+\newtheorem{Theorem}{Theorem}[section]
+\newtheorem{lemma}[Theorem]{Lemma}
+\newtheorem{proposition}[Theorem]{Proposition}
+\newtheorem{corollary}[Theorem]{Corollary}
+
+\newcommand{\remove}[1]{ }
+\newcommand{\eg}{\emph{e.g.}}
+\newcommand{\ie}{\emph{i.e.}}
+
+\newenvironment{proof}[1][Proof:]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\newcommand{\qed}{\nobreak \ifvmode \relax \else
+	\ifdim\lastskip<1.5em \hskip-\lastskip
+	\hskip1.5em plus0em minus0.5em \fi \nobreak
+	\vrule height0.6em width0.5em depth0.0em\fi}
+
+\def\sqzhuge{\vspace{-14pt}}
+\def\sqzsec{\vspace{-10pt}}
+\def\sqzsmall{\vspace{-8pt}}
+\def\sqztiny{\vspace{-4pt}}
+\remove{
+	\usepackage{vmargin}
+	\setpapersize{USletter}
+	\setmarginsrb{2.54cm}{2.54cm}{2.54cm}{1.5cm}{0pt}{0mm}{0pt}{8mm}
+	\setcounter{secnumdepth}{3}
+}
+
+\begin{document}
+ 
+
+%\title{Infrastructure Notes} 
+%\vspace{-0.4in}
+%\maketitle
+ 
+ 
+\title{Privacy-aware Traffic Measurement through Vehicle-to-Infrastructure Communication}
+
+
+\maketitle
+\vspace{-1in}
+\begin{abstract}
+	\input{abstract.tex}
+\end{abstract}
+
+ 
+\input{intro}
+
+ 
+ 
+
+\input{relatedwork}
+ 
+
+\input{design}
+ 
+\input{analysis}
+ 
+\input{evaluation}
+ 
+\input{application}
+ 
+\input{conclusion}
+ 
+
+
+
+ 
+
+\end{document}
+%{\small%\bibliographystyle{IEEEtran}
+%\bibliography{reference}
+%}
+
+%\end{document}
