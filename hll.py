@@ -153,7 +153,8 @@ class HyperLogLog(object):
         if V > 0:
             H = self.m * math.log(self.m / float(V))
             if H <= get_treshold(self.p):
-                print "small range correction"
+                # print "small range correction"
+                pass
             return H if H <= get_treshold(self.p) else self._Ep()
         else:
             return self._Ep()
