@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1894
-NormalPos.bottom=903
+NormalPos.right=932
+NormalPos.bottom=894
 Class=LaTeXView
 Document=main.tex
 
 [Frame0_View0,0]
-TopLine=121
-Cursor=0
+TopLine=134
+Cursor=3723
 
 [Frame1]
 Flags=0
@@ -29,8 +29,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1894
-NormalPos.bottom=903
+NormalPos.right=932
+NormalPos.bottom=894
 Class=LaTeXView
 Document=relatedwork.tex
 
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1894
-NormalPos.bottom=903
+NormalPos.right=932
+NormalPos.bottom=894
 Class=LaTeXView
 Document=design.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=423
+Cursor=235
 
 [Frame3]
 Flags=0
@@ -65,8 +65,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1894
-NormalPos.bottom=903
+NormalPos.right=932
+NormalPos.bottom=894
 Class=LaTeXView
 Document=analysis.tex
 
@@ -76,5 +76,5 @@ Cursor=272
 
 [SessionInfo]
 FrameCount=4
-ActiveFrame=3
+ActiveFrame=0
 
